@@ -1,19 +1,6 @@
-/* Estilos básicos */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    color: #333;
-}
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
 
+/* Estilos menu */
 nav ul {
     list-style: none;
     padding: 0;
@@ -29,40 +16,125 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
+header, footer{
+    background-color: #333;
+    color: white;
+    padding: 15px 0; 
+    text-align: center;
+}
+/* Estilos básicos */
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; 
+    color: #333333; 
+    line-height: 1.6; 
+    font-size: 16px;  
+    
+}
 section {
     padding: 40px 20px;
     margin: 20px;
 }
 
-h1, h2 {
-    color: #2c3e50;
-    font-size: 2em;
+
+/* ---------------------------Hero-------------------------------- */
+#hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/fondoHero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 475px;
+    overflow: hidden;
+    margin: 0%;
+    
+}
+#overlay{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 1;
+}
+#texto-hero, #img-hero{
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 2%;
+    z-index: 2;
+    color: white;
+    text-align: justify;
+}
+#img-hero{
+    width: 100%;
+    z-index: 3;
+    height: auto;
+}
+
+/* ----------------Servicios--------------------------- */
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    background-color: #fff;
+    margin: 5%;
+    gap: 5%;
+}
+
+#tituloservicios{
+    text-align: center;
 }
 
 .servicio-item {
-    background-color: #fff;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: -3%;
+    width: 50%;
+    height: 200px;
     padding: 20px;
-    margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.servicio-item h3 {
-    margin: 0;
-    color: #2980b9;
-}
+    background-color: rgba(157,238,227,255);
+    
+}  
 
 .servicio-item span {
+    text-align: center;
     font-weight: bold;
-    color: #e74c3c;
+    color:  #333;
     font-size: 1.2em;
 }
 
-form input, form textarea {
+#robotreparando{
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-color: rgba(157,238,227,255);
+    border: 10px solid #CDCDCD;
+    border-radius: 20px;
+}
+
+
+
+/* ----------------------Formulario--------------------------- */
+
+.formulario{
+    width:90%;
+    padding: 2%;    
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    
+}
+/* form input, form textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 2%;
+    margin: 5%;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
@@ -82,9 +154,11 @@ button:hover {
     background-color: #1abc9c;
 }
 
+
+
 footer {
     text-align: center;
     padding: 15px;
     background-color: #333;
     color: white;
-}
+} */
