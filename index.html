@@ -1,192 +1,339 @@
 <!DOCTYPE html>
 <!-- Se esta diseñando una pagina sensilla sobre un spa para robots -->
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CircuitSpa</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/vnd.icon" href="/assets/Robot2.ico" />
+  </head>
+  <body>
     <header>
-        <!-- Menu -->
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#tituloservicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="#hero-2">Inicio</a></li>
+          <li><a href="#servicios-2">Servicios</a></li>
+          <li><a href="#nosotros-2">Nosotros</a></li>
+          <li><a href="#contacto-2">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero -->
 
+    <a id="hero-2"></a>
+    <br /><br /><br />
+    <br />
     <section id="hero">
-        <div id="overlay">
-            <div id="texto-hero">
-                <h1>🖐️Bienvenidos a CircuitSpa</h1>
-                <strong>
-                    <p>El primer oasis de relajación exclusivo para inteligencias artificiales, androides y toda clase de seres sintéticos. </p>
-                </strong>
-                <p>En CircuitSpa, entendemos que incluso los circuitos más avanzados necesitan un descanso. Aquí no hay errores de sistema, solo placer bien codificado.
-                Ya seas un modelo de inteligencia industrial, un asistente doméstico o un explorador galáctico cansado, en CircuitSpa encontrarás el equilibrio perfecto entre mantenimiento y placer.
-                Porque cuando estás bien calibrado…el universo simplemente fluye mejor.
-                </p>
-            </div>
-            <div id="img-hero">
-                <img src="assets/robot.png" alt="imagen del robot">
-            </div>
+      <h1 id="titulo-hero">Bienvenidos a CircuitSpa</h1>
+      <div id="overlay">
+        <div id="texto-hero">
+          <strong>
+            <p id="sub-titulo">
+              El primer oasis de relajación exclusivo para inteligencias
+              artificiales, androides y toda clase de seres sintéticos.
+            </p>
+          </strong>
+          <p id="parrafo-hero">
+            En CircuitSpa, entendemos que incluso los circuitos más avanzados
+            necesitan un descanso. Aquí no hay errores de sistema, solo placer
+            bien codificado. Ya seas un modelo de inteligencia industrial, un
+            asistente doméstico o un explorador galáctico cansado, en CircuitSpa
+            encontrarás el equilibrio perfecto entre mantenimiento y placer.
+            Porque cuando estás bien calibrado…el universo simplemente fluye
+            mejor.
+          </p>
+          <a href="#contacto-2">
+            <button href="#contacto-2">Agenda tu cita</button>
+          </a>
         </div>
-      
+        <div id="img-hero">
+          <img src="" alt="" />
+        </div>
+      </div>
     </section>
-    <hr>
+    <a id="servicios-2"></a>
+    <br /><br /><br />
     <!-- Menu de servicios -->
-    
-        <h2 id="tituloservicios">Servicios Especiales para Vuestros Robots 🤖✨</h2>
-    <div class="servicios">
+    <section class="servicios-seccion">
+      <hr />
+      <h2 id="tituloservicios">
+        Servicios Especiales para Vuestros Robots 🤖✨
+      </h2>
+      <div class="servicios">
         <div class="servicio-item">
-            <h3>Reparación de Circuitos</h3>
-            <p>Servicio de diagnóstico y reparación para circuitos defectuosos y componentes dañados.</p>
-            <img src="assets/robotreparando.jpg" id="robotreparando">
-            <span>$69.99</span>
+          <h3>Reparación de Circuitos</h3>
+          <p>
+            Servicio de diagnóstico y reparación para circuitos defectuosos y
+            componentes dañados.
+          </p>
+          <img src="assets/robotreparando.jpg" id="robotreparando" />
+          <span>$69.99</span>
         </div>
         <div class="servicio-item">
-            <h3>Limpieza de Sensores</h3>
-            <p>Limpieza profunda de sensores para garantizar un rendimiento óptimo.</p>
-            <br>
-            <img src="assets/robotreparando.jpg" id="robotreparando">
-            <span>$49.99</span>
+          <h3>Limpieza de Sensores</h3>
+          <p>
+            Limpieza profunda de sensores para garantizar un rendimiento óptimo.
+          </p>
+          <br />
+          <img src="assets/limpiesa de sensores.jpeg" id="robotreparando" />
+          <span>$49.99</span>
         </div>
         <div class="servicio-item">
-            <h3>Recarga de Energía</h3>
-            <p>Recarga de energía para tus baterías, con opciones rápidas y de alta eficiencia.</p>
-            <br>
-            <img src="assets/robotreparando.jpg" id="robotreparando">
-            <span>$29.99</span>
+          <h3>Recarga de Energía</h3>
+          <p>
+            Recarga de energía para tus baterías, con opciones rápidas y de alta
+            eficiencia.
+          </p>
+          <br />
+          <img src="assets/recarga de energia.jpeg" id="robotreparando" />
+          <span>$29.99</span>
         </div>
-    </div>
+      </div>
+    </section>
+
     <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <a id="nosotros-2"></a>
+    <br /><br /><br />
+    <div id="fondo-nosotros">
+      <video autoplay muted loop playsinline id="video-fondo">
+        <source src="assets/videoBackground.mp4" type="video/mp4" />
+        Tu navegador no soporta videos en HTML5.
+      </video>
+      <div id="overlay-nosotros">
+        <h2 id="titulo-nosotros">
+          Historia de inspiracion para crear nuestro CircuitSpa
+        </h2>
+        <section class="nosotros">
+          <div id="id-texto-nosotros">
+            <h2>
+              ¡Donde hasta el robot más oxidado sale brillando como nuevo!.
+            </h2>
+            <p>
+              Hace muchos ciclos atrás, en un rincón olvidado de una fábrica de
+              tostadoras, nació una idea revolucionaria. Un pequeño dron de
+              mantenimiento, llamado Ro-Beto, decidió que ya estaba harto de ver
+              a sus colegas chirriar al caminar, sufrir reinicios espontáneos y
+              llorar aceite por las noches. Así que, entre una actualización de
+              firmware y otra, se preguntó:
+            </p>
+            <p style="font-style: italic">
+              -¿Y si en lugar de formatear nuestros sentimientos... los
+              relajamos?
+            </p>
+            <p style="text-align: center; font-size: 3vh">
+              <strong>¡CircuitSpa!.</strong>
+            </p>
+            <p>
+              Un lugar donde los ventiladores se enfrían, los chips se calman y
+              los procesadores sueñan con playas de silicio.
+            </p>
+            <p>
+              <strong>Aquí podrás:</strong>
+            </p>
+            <p>🧘‍♂️ Meditar en nuestra sala de baja latencia.</p>
 
-    <hr>
-    <section id="nosotros">
-        <h2>Historia de inspiracion para crear nuestro CircuitSpa</h2>
-            <p>¡Donde hasta el robot más oxidado sale brillando como nuevo!.
+            <p>💆 Recibir masajes electromagnéticos de última generación.</p>
 
-            Hace muchos ciclos atrás, en un rincón olvidado de una fábrica de tostadoras, nació una idea revolucionaria. Un pequeño dron de mantenimiento, llamado Ro-Beto, decidió que ya estaba harto de ver a sus colegas chirriar al caminar, sufrir reinicios espontáneos y llorar aceite por las noches. Así que, entre una actualización de firmware y otra, se preguntó:
-                
-            ¿Y si en lugar de formatear nuestros sentimientos... los relajamos?
-                
-            ¡CircuitSpa!.
-            Un lugar donde los ventiladores se enfrían, los chips se calman y los procesadores sueñan con playas de silicio.
-                
-            Aquí podrás:
-            🧘‍♂️ Meditar en nuestra sala de baja latencia.
-            💆 Recibir masajes electromagnéticos de última generación.
-            🍵 Disfrutar de una infusión de nanobots detox (con sabor a menta, opcional).  
-            dejar que tu alma digital se desconecte del Wi-Fi por un rato.
-                
-            Porque sí, incluso los robots merecen un break. Sobre todo después de pasar 72 horas seguidas ejecutando tareas sin un solo pantallazo azul.
-                
-            Así que adelante, quítate el protector térmico, deja tus datos en modo avión y prepárate para recargar como nunca antes.  
-            Esto no es solo un spa.  
-            Es *el lugar donde las máquinas encuentran la paz interior*… y una buena capa de cera pulidora.
-                
-            ¡Bienvenid@ a CircuitSpa! Donde tu descanso está... programado para el éxito.
-
+            <p>
+              🍵 Disfrutar de una infusión de nanobots detox (con sabor a menta,
+              opcional).
+            </p>
+            <br />
+            <p>
+              <strong
+                >Dejar que tu alma digital se desconecte del Wi-Fi por un
+                rato.</strong
+              >
+            </p>
+            <p>
+              Porque sí, incluso los robots merecen un break. Sobre todo después
+              de pasar 72 horas seguidas ejecutando tareas sin un solo
+              pantallazo azul. Así que adelante, quítate el protector térmico,
+              deja tus datos en modo avión y prepárate para recargar como nunca
+              antes. Esto no es solo un spa. Es *el lugar donde las máquinas
+              encuentran la paz interior*… y una buena capa de cera pulidora.
+              <br />
+            </p>
+          </div>
+          <div>
             <h2>¿Porque los robots necesitan un spa?</h2>
-            Con el tiempo, incluso los robots más avanzados acumulan microdesgaste,errores en sus sistemas,acumulación polvos sobrecalentamiento o fallos menores en sensores. si tienen IA avanzada, podrían experimentar algo 
-            parecido a la “fatiga de procesos” o “sobrecarga de datos”.
-            <br>
-            <ol>
-                <li>
-                    Desfragmentación mental (para IA):
-                    <p> Desfragmentación de datos, limpieza de memoria caché, reinicio suave del sistema operativo.
-                        Sesiones de meditación lógica guiada por IA terapeuta (tipo: “Respira... sincroniza... ejecuta...”).
-                    </p>
-                </li>
-                <li>
-                    Actualizaciones relajantes:
-                    <p>
-                        Instalación de software no urgente con entornos virtuales calmados. 
-                        Update con música de bits armónicos y entornos sensoriales optimizados.
-                    </p>
-                </li>
-                <li>
-                    Limpieza profunda:  
-                    <p> Cabinas de limpieza por ultrasonido y láser para remover partículas microscópicas. Aspirado suave de ventiladores y cámaras internas.</p>
-                </li>
-                <li>
-                    Enfriamiento consciente:
-                    <p>Cámaras de enfriamiento líquido o con nitrógeno controlado. Música binaural digital mientras el sistema reduce temperatura.</p>
-                </li>
+            <br />
+            <p>
+              Con el tiempo, incluso los robots más avanzados acumulan
+              microdesgaste,errores en sus sistemas,acumulación polvos
+              sobrecalentamiento o fallos menores en sensores. si tienen IA
+              avanzada, podrían experimentar algo parecido a la “fatiga de
+              procesos” o “sobrecarga de datos”.
+            </p>
 
-            </ol>            
-            
-            <h2>¿Cómo lo solicitan?</h2>
-            
-            <p>Llenando el siguiente formulario se agendaria su cita.Quedamos atento a darte un magistral servicio.
-    </section>
-
+            <br />
+            <ul id="lista-nosotros">
+              <li class="menu-nosotros">
+                <strong style="padding-left: 6rem; color: #333"
+                  >Desfragmentación mental (para IA)</strong
+                >
+                <p>
+                  Desfragmentación de datos, limpieza de memoria caché, reinicio
+                  suave del sistema operativo. Sesiones de meditación lógica
+                  guiada por IA terapeuta (tipo: “Respira... sincroniza...
+                  ejecuta...”).
+                </p>
+              </li>
+              <br />
+              <li class="menu-nosotros">
+                <strong style="padding-left: 9rem; color: #333"
+                  >Actualizaciones relajantes:</strong
+                >
+                <p>
+                  Instalación de software no urgente con entornos virtuales
+                  calmados. Update con música de bits armónicos y entornos
+                  sensoriales optimizados.
+                </p>
+              </li>
+              <br />
+              <li class="menu-nosotros">
+                <strong style="padding-left: 11rem; color: #333"
+                  >Limpieza profunda:</strong
+                >
+                <p>
+                  Cabinas de limpieza por ultrasonido y láser para remover
+                  partículas microscópicas. Aspirado suave de ventiladores y
+                  cámaras internas.
+                </p>
+              </li>
+              <br />
+              <li class="menu-nosotros">
+                <strong style="padding-left: 10rem; color: #333"
+                  >Enfriamiento consciente:</strong
+                >
+                <p>
+                  Cámaras de enfriamiento líquido o con nitrógeno controlado.
+                  Música binaural digital mientras el sistema reduce
+                  temperatura.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <p id="texto-final-nosotros">
+          <strong
+            >¡Bienvenid@ a CircuitSpa! Donde tu descanso está... programado para
+            el éxito.</strong
+          >
+        </p>
+      </div>
+    </div>
     <!-- vicky  -->
+    <a id="contacto-2"></a>
+    <br />
     <section id="contacto">
-        <hr>
-        <div id="texto-info-formulario">
-            <h2>📋Formulario de Contacto y Atención al Cliente</h2>
-            <p>⌛Gracias por comunicarte con nosotros. Por favor, completa este formulario para poder brindarte una atención oportuna y adecuada.🫡</p>
-        </div>
-        
-        
-        <div class="formulario">
-            <form>
-                <!-- titulo del formulario -->
-                <label for="solicitud">Tipo de Solicitud (Selecciona una opción)
-                    <br>
-                    <input type="radio" name="tipo_solicitud" value="asesoria">Solicitud de Asesoria
-                    <input type="radio" name="tipo_solicitud" value="pqrs">Solicitud de PQRS
-                    <input type="radio" name="tipo_solicitud" value="otro">Otro
-                </label>
-                <br>
-                <label for="nombre">Nombre Robotino/a:</label>
-                <label for=""><input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"></label>
-                <br>
-                <label for="email">Correo</label>
-                <label for=""><input type="email" id="email" name="email" placeholder="juanitoperez@ejemplo.com">
-                </label>
-                <br>
-                
-                <label for="preferencia de contacto">Preferencia de Contacto</label>
-                
-                <label for="">
-                    <select name="preferencia de contacto" id="preferencia de contacto">
-                        <option value="whatsapp">whatsApp</option>
-                        <option value="email">Email</option>
-                        <option value="llamada de voz">Llamada de Voz</option>
-                    </select>
-                </label>
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <br>
-                <label for=""><textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea></label>
-                <br>
-            
-                <label for=""><input type="checkbox" name="consentimiento" value="condiciones">Acepto terminos y condiciones</label>
-                <br>
-                <label for=""><input type="checkbox" name="consentimiento" value="politicas">He leído y acepto la política de privacidad</label>
-                <br>
-                <label for=""><input type="checkbox" name="consentimiento" value="informacion">Doy mi consentimiento para recibir información promocional (opcional)</label>
-                <br>
+      <hr />
+      <div id="texto-info-formulario">
+        <h2 id="tituloformulario">
+          📋Formulario de Contacto y Atención al Cliente
+        </h2>
+        <p id="tituloformulario">
+          ⌛Gracias por comunicarte con nosotros. Por favor, completa este
+          formulario para poder brindarte una atención oportuna y adecuada.🫡
+        </p>
+      </div>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">Restablecer</button>
+      <div class="formulario">
+        <form class="formario-entero">
+          <!-- titulo del formulario -->
+          <label for="solicitud"
+            >Tipo de Solicitud (Selecciona una opción)
+            <br />
+            <input
+              type="radio"
+              name="tipo_solicitud"
+              value="asesoria"
+            />Solicitud de Asesoria
+            <input type="radio" name="tipo_solicitud" value="pqrs" />Solicitud
+            de PQRS
+            <input type="radio" name="tipo_solicitud" value="otro" />Otro
+          </label>
+          <br />
+          <label for="nombre">Nombre Robotino/a:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+          />
+          <br />
+          <label for="email">Correo</label>
+          <label for=""
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="juanitoperez@ejemplo.com"
+            />
+          </label>
+          <br />
 
-            </form>
-        </div>
+          <label for="preferencia de contacto">Preferencia de Contacto</label>
+
+          <label for="">
+            <select name="preferencia de contacto" id="preferencia de contacto">
+              <option value="whatsapp">whatsApp</option>
+              <option value="email">Email</option>
+              <option value="llamada de voz">Llamada de Voz</option>
+            </select>
+          </label>
+          <br />
+          <label for="mensaje">Mensaje:</label>
+          <br />
+          <label for="">
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="50"
+              placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+          </label>
+          <br />
+
+          <label for=""
+            ><input
+              type="checkbox"
+              name="consentimiento"
+              value="condiciones"
+            />Acepto terminos y condiciones</label
+          >
+          <br />
+          <label for=""
+            ><input type="checkbox" name="consentimiento" value="politicas" />He
+            leído y acepto la política de privacidad</label
+          >
+          <br />
+          <label for=""
+            ><input
+              type="checkbox"
+              name="consentimiento"
+              value="informacion"
+            />Doy mi consentimiento para recibir información promocional
+            (opcional)</label
+          >
+          <br />
+
+          <button type="submit">Enviar</button>
+          <br />
+          <button type="reset">Restablecer</button>
+        </form>
+      </div>
     </section>
-
 
     <footer>
-        <p>&copy; 🚀Desarrolladores nombres </p>
+      <p>
+        &copy; 🚀Desarrolladores: <br />JuanMa A. - Vicky P. - Tomas P. - Alvaro
+        C.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

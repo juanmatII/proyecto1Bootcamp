@@ -16,10 +16,16 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    
+}
 header, footer{
     background-color: #333;
     color: white;
-    padding: 15px 0; 
+    padding: 15px 15px; 
     text-align: center;
 }
 /* Estilos básicos */
@@ -28,29 +34,37 @@ body {
     padding:0;
     font-family: 'Arial', sans-serif;
     background-color: #ffffff; 
-    color: #333333; 
-    line-height: 1.6; 
-    font-size: 16px;  
-    
+    color: #333333;
+    overflow-x: hidden; /*para evitar desbordes de la pantalla*/
 }
 section {
     padding: 40px 20px;
     margin: 20px;
 }
+hr{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 0.3vh;
+    background-color: #333;
+    
+}
+
 
 
 /* ---------------------------Hero-------------------------------- */
 #hero{
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     background-image: url(/assets/fondoHero.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 475px;
+    height: 78.5vh;
     overflow: hidden;
     margin: 0%;
+
     
 }
 #overlay{
@@ -60,32 +74,54 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.205);
     z-index: 1;
 }
 #texto-hero, #img-hero{
-    width: 50%;
+    width: 70%;
     padding-left: 10%;
-    padding-top: 2%;
     z-index: 2;
-    color: white;
-    text-align: justify;
+    padding-top: 14%;
+    color: #333;
 }
 #img-hero{
     width: 100%;
     z-index: 3;
     height: auto;
 }
+#texto-hero{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+#sub-titulo{
+    font-size: 2.5vh;
+    background-color: #33333323;
+    padding: 1vh;
+}
 
+#titulo-hero{
+    border: #333;
+    font-weight:900;
+    margin-top: 2%;
+    margin-left: 34%;
+    z-index: 4;
+    font-size: 5vh;
+    text-align: center;
+}
 /* ----------------Servicios--------------------------- */
-
+.servicios-seccion{
+    margin: 0%;
+    background-color: rgba(175, 170, 170, 0.205);
+    z-index: 1;
+    padding: 0.1% 0%;
+}
 .servicios {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    height: 500px;
-    background-color: #fff;
-    margin: 5%;
-    gap: 5%;
+    gap: 1%;
+    padding: 2%;
 }
 
 #tituloservicios{
@@ -93,12 +129,13 @@ section {
 }
 
 .servicio-item {
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 0.1%;
+    align-items: center;
     text-align: center;
-    margin-top: -3%;
-    width: 50%;
-    height: 200px;
-    padding: 20px;
+    gap: 0.1%;
     border-radius: 10px;
     background-color: rgba(157,238,227,255);
     
@@ -112,53 +149,151 @@ section {
 }
 
 #robotreparando{
-    justify-content: center;
-    width: 300px;
-    height: 300px;
-    border-color: rgba(157,238,227,255);
+    width: 250px;
+    height: auto;
     border: 10px solid #CDCDCD;
     border-radius: 20px;
 }
-
-
-
-/* ----------------------Formulario--------------------------- */
-
-.formulario{
-    width:90%;
-    padding: 2%;    
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    
-}
-/* form input, form textarea {
-    width: 100%;
-    padding: 2%;
-    margin: 5%;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1em;
+/* -----------------------------------------------nosotros----------------------------------- */
+.nosotros {
+    display: flex;                    /* Flexbox para alinear en fila */
+    gap: 5%;                          /* Espacio entre columnas */
+    justify-content: center;         /* Centra las columnas horizontalmente */
+    align-items: flex-start;         /* Alinea al inicio verticalmente */
+    padding: 2% 2%;                   /* Espaciado interno (arriba/abajo: 2%, lados: 2%) */
+    flex-wrap: wrap;                 /* Permite que los elementos se acomoden si el espacio es reducido */
 }
 
-button {
-    background-color: #16a085;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
+/* Estilo para las columnas individuales */
+.nosotros > div {
+    flex: 1;                          /* Hace que cada div tome el mismo ancho */
+    min-width: 300px;                /* Evita que se achiquen demasiado */
+    max-width: 600px;                /* Máximo tamaño para mantener legibilidad */
+    padding: 1rem;                  /* Espaciado interno en cada columna */
+    z-index: 4000;
+    text-align: justify;
 }
-
-button:hover {
-    background-color: #1abc9c;
-}
-
-
-
-footer {
+#titulo-nosotros{
+    border: #333;
+    font-weight:900;
     text-align: center;
-    padding: 15px;
+    font-size: 5vh;
     background-color: #333;
+}
+#texto-final-nosotros{
+    border: #333;
+    font-weight:900;
+    text-align: center;
+    font-size: 3vh;
+}
+.menu-nosotros{
+    background-color:rgba(157,238,227,255) ;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+#lista-nosotros{
+    padding: 1rem;
+    color: #333;
+    list-style-type: none;
+}
+#fondo-nosotros{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    background-color: #333;
+    z-index: 0;
+    width: 100%;
+
+}
+#overlay-nosotros{
+    position: relative;
+    background-color:#ffffff2a;
+    padding: 2rem;
+    color: #fff;
+    z-index: 2;
+}
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* ------------------------------------------------Formulario--------------------------------- */
+
+#tituloformulario{
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fff; /* Fondo blanco */
+}
+.formario-entero{
+    border: solid #33333341;
+    background-color: #33333309;
+    padding: 0.8rem;
+}
+
+.formulario form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+    font-family: sans-serif;
+    color: #333; /* Texto oscuro */
+}
+
+  /* Títulos y etiquetas */.formulario label {
+    font-weight: bold;
+    color: #00c2cb; /* Azul verdoso */
+}
+
+  /* Inputs y textarea */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+  /* Botones */
+.formulario button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00c2cb;
     color: white;
-} */
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.formulario button:hover {
+    background-color: #009aa1;
+}
+
+  /* Espacio para radios y checkboxes */
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+.formulario input [type = "checkbox"]{
+    gap: 0.1rem;
+}
